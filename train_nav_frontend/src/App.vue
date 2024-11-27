@@ -2,7 +2,7 @@
 
   <!--Step 3 use the component-->
   <MyHeader projectTitle="Train Navigation"/> 
-  <TrainDetailsBox :trainDetails=trainDetails />
+  <TrainDetailsBox :trainDetails="trainDetails[0]?.trains" />
  
 </template>
 
@@ -28,10 +28,10 @@ export default{
   methods:{
     //promoises
     async fetchTrainDetails(){
-      const res = await fetch('http://localhost:3586/api');
+      const res = await fetch("http://localhost:3586/api");
       const data = await res.json()
-      console.log(data)
-      return data
+      //console.log(data)
+      return data;
     }
   },
   async created(){

@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const http = require('http');
+const httpPort= process.env.PORT ||3586;
 const {MongoClient} = require('mongodb');
 
 const getFileContentType = (filePath) => {
@@ -70,14 +71,15 @@ async function fetchTrainDetails(client) {
 
 const server = http.createServer(async (req, res) => {
   if (req.url==='/api') {
-    fs.readFile(
-      path.join(__dirname, 'public', 'db.json'),'utf-8',
-      (error, data) => {                          
-        if (error) throw error;
-          res.writeHead(200, { 'content-type': 'application/json' });
-          res.end(data);
-      }
-    );
+    const content = main();
+    content.then((trainDetails) => {
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Methods', 'GET');
+      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+      res.writeHead(200, { 'content-type': 'application/json' });
+      res.end(trainDetails);
+
+    });
   }
   else {
     let filePath = path.join(__dirname, "public", req.url === '/' ? "index.html" : req.url);
