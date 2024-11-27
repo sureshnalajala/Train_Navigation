@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice&family=Prata&family=Trirong&family=Alegreya+Sans&display=swap">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="navigation" class="main_nav">
+            <a href="#" class="logo">My Portfolio</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contactme">Contact Me</a> 
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                <i class="fa fa-bars"></i></a>   
+        </nav>
+        
+        <section id="aboutme" href="aboutme">
+            <p class="sectionheading">About Me</p>
+            <div id="image_container">
+                <div class="imagebuttonholder">
+                    <img src="./References/User-Image.jpg" id="userimage" alt="User Image">
+                </div>
+            </div>
+
+            <div id="intro_container">
+                <div id="introductionbox">
+                    <p id="hello"> Hello, I am &nbsp;&nbsp;&nbsp;&nbsp;<span id="name">Suresh Nalajala</span></p>
+                    <br>
+                    <p id="content">I am current Graduate student at the University of New Haven,
+                        majoring in Computer Science. Experienced DevOps specialist with a robust 
+                        two-year tenure at Capgemini Technologies, adept in Kubernetes, AWS, 
+                        Microsoft Azure, continuous integration (CI), continuous deployment (CD), 
+                        Docker, and Linux. 
+                    </p>
+                    <br>
+                    <p id="email">
+                        <b>Email:</b> web@unh.newhaven.edu
+                    </p>                     
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" href="experience">
+            <p class="sectionheading">Experience</p>
+            <div id="workdetails">
+                <p id="company">Capgemini Technologies India Pvt Ltd</p>
+                <p class="subtags">
+                    <span>
+                        <b>Designation:</b> Senior DevOps Engineer&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </span>
+                    <span>
+                        <b>Duration:</b> Nov 2021 - May 2023<br>
+                    </span>
+                    <span>
+                        <b>Responsibilities:</b>
+                    </span>    
+                </p>
+                <ul id="reponsibilites">
+                    <li>
+                        <p>
+                            Facilitated client engagement by gathering requirements and translating them 
+                            into user stories within the Jira board during sprint planning sessions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Conducted thorough code reviews, ensuring the quality and alignment of pull 
+                            requests with project standards and requirements, and providing timely approvals.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Implemented and optimized continuous integration and continuous deployment (CI/CD) 
+                            pipelines, streamlining deployment processes and bolstering agility within the deployment lifecycle.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Spearheaded automation initiatives for key processes, significantly enhancing team efficiency and 
+                            productivity while fostering a culture of ongoing enhancement and innovation.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>      
+        </section>
+
+        <section id="skills" href="skills">
+            <p class="sectionheading">Skills</p>
+            <div class="skillscontainer">
+                <img src="./References/AWS.png" alt="AWS Icon" class="skill-image">
+                <img src="./References/Azure.png" alt="Azure Icon" class="skill-image">
+                <img src="./References/Docker.png" alt="Docker Icon" class="skill-image">
+                <img src="./References/Helm.png" alt="Helm Icon" class="skill-image">
+                <img src="./References/Jenkins.png" alt="Jenkins Icon" class="skill-image">
+                <img src="./References/Kubernetes.png" alt="Kubernetes Icon" class="skill-image">
+            </div>
+            <div class="skillscontainer">
+                <img src="./References/Linux.png" alt="Linux Icon" class="skill-image">
+                <img src="./References/Nexus.png" alt="Nexus Icon" class="skill-image">
+                <img src="./References/Postgresql.png" alt="PostgreSQL Icon" class="skill-image">
+                <img src="./References/RabbitMQ.png" alt="RabbitMQ Icon" class="skill-image">
+                <img src="./References/SonarQube.png" alt="SonarQube Icon" class="skill-image">
+                <img src="./References/Terraform.png" alt="Terraform Icon" class="skill-image">
+            </div>
+        </section>
+
+        <section id="projects" href="projects">
+            <p class="sectionheading">Projects</p>
+            <div id="proj1_container">
+                <div class="imagebutton">
+                    <img src="./References/Alstom.jpg" id="project1" alt="Alstom Project Image">
+                </div>
+
+                <div class="projectcontent">
+                    <p class="projectname">Mobility Data Platform (MDP)</p>
+                    <ul class="projectdesc">
+                        <li>
+                            <p>
+                                Implemented the Mobility Data Platform (MDP) for Alstom, a comprehensive 
+                                solution hosted on Azure and managed through DevOps practices. This platform, 
+                                designed to cater to the needs of Alstom end users, offers a fully automated 
+                                environment comprising essential core components and customizable options to 
+                                align with customer requirements.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Responsibilities encompassed developing and testing MDP components, utilizing 
+                                technologies such as cert-manager, PostgreSQL, Minio, Grafana, Longhorn, Kibana, 
+                                Kafka, Nifi, ActiveMQ, and RabbitMQ.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Managed Azure DevOps repository, reviewed and merged code pull requests, and maintained 
+                                effective branching strategies. Executed deployments on both cloud and bare-metal servers, 
+                                customized resource configurations, and conducted functional tests for critical components.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Demonstrated proficiency in Linux server administration, storage monitoring, and troubleshooting. 
+                                Implemented detailed monitoring of Kubernetes resources using Grafana and provided customer support through the MDP support portal.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="proj2_container">
+                <div class="imagebutton">
+                    <img src="./References/Microservices.jpg" id="project2" alt="Microservices Project Image">
+                </div>
+                <div class="projectcontent">
+                   <p class="projectname">Microservices for Train Signaling</p> 
+                   <ul class="projectdesc">
+                    <li>
+                        <p>
+                            As a DevOps Engineer for the Microservices Application for Train Signaling project at Alstom, 
+                            contributed to the development and deployment of Docker images for microservices within a Linux 
+                            environment, utilizing advanced DevOps methodologies. Responsibilities included setting up CI/CD 
+                            pipelines using Jenkins scripts, managing daily builds to Dev and QA environments, monitoring builds, 
+                            and addressing issues as they arose.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Demonstrated proficiency in Linux server administration, including storage monitoring and issue resolution. 
+                            Coordinated with development teams to synchronize code updates from GitHub for building Docker images. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Utilized Sonarqube for static analysis, facilitated microservices deployment using Helm charts, and managed 
+                            Docker image storage using Nexus Artifactory. Automated manual tasks using scripts and scheduled them via 
+                            Jenkins using Poll SCM. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Conducted detailed monitoring of Kubernetes resources using Grafana and played a key role in setting up Kubernetes 
+                            clusters and creating manifest files for deployment, ensuring optimal service operation.
+                        </p>
+                    </li>
+                   </ul>
+                </div>
+            </div>                
+        </section>
+
+        <section id="education" href="education">
+            <p class="sectionheading">Education</p>
+            <div class="educationinfo">
+                <p class="school">University of New Haven</p>
+                <p class="subtags">
+                    <span>
+                        <b>Major:</b> M.S in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Location:</b> West Haven, CT, USA.<br>
+                    </span>
+                    <span>
+                        <b>Duration:</b> Aug 2023 - May 2025&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </span>
+                    <span>
+                        <b>CGPA:</b>4.0/4.0
+                    </span>
+                </p>    
+            </div>                 
+                    
+            <div class="educationinfo">
+                <p class="school">Lovely Professional University</p>
+                <p class="subtags">
+                    <span>
+                        <b>Major:</b> B.E in Electronics and Communication Engineering &nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Location:</b> Punjab, India.<br>
+                    </span>
+                    <span>
+                        <b>Duration:</b> Aug 2016 - Jun 2020&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </span>
+                    <span>
+                        <b>CGPA:</b>8.95/10
+                    </span>
+                </p>                            
+            </div>
+       </section>
+
+       <section id="achievements" href="achievements">
+            <p class="sectionheading">Achievements</p>
+            <ul id="achievementslisting">
+                <li>
+                    <p>
+                        <b>
+                            Outstanding Performer:
+                        </b>
+                        I received this award for outstanding performance and lasting contribution 
+                        in Q2 - 01st April 2022 to 30th June 2022 for Capgemini Engineering.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Outstanding Performer:
+                        </b>
+                        I received this award for outstanding performance and lasting contribution 
+                        in December 2021 for Capgemini Engineering India.
+                    </p>
+                </li>
+            </ul>        
+       </section>
+                
+        <footer id="contactme" href="contactme">
+            <p class="sectionheading">Contact Me</p>
+            <div id="contactdetails">
+                <a href="https://outlook.office.com/mail/">
+                    <img src="./References/Email.jpg" alt="Email" class="contact-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/suresh-nalajala-562897290/">
+                    <img src="./References/LinkedIn.png" alt="LinkedIn" class="contact-icon">
+                </a>
+                <a href="https://www.instagram.com/nalajala.suresh/?igsh=c2FzbGFwb2xqeHo0">
+                    <img src="./References/Instagram.jpg" alt="Instagram" class="contact-icon">
+                </a>                    
+            </div>
+        </footer> 
+        
+        <div id="ScrollToTop">
+            <a href="#top" class="ScrollToTop">↑</a>
+        </div>        
+        
+    </div>  
+</body>
+</html>
