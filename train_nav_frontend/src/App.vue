@@ -28,7 +28,7 @@ export default{
   methods:{
     //promoises
     async fetchTrainDetails(){
-      const res = await fetch("http://localhost:3586/api");
+      const res = await fetch("https://train-nav.onrender.com/api");
       const data = await res.json()
       //console.log(data)
       return data;

@@ -23,14 +23,7 @@ export default {
 </script>
 
 <style scoped>
-/*#traindetailspage
-{
-    background-image: url('../assets/SkyImage.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding:30px;
-}*/
+
 #traindetailsbox
 {
     width:95%;

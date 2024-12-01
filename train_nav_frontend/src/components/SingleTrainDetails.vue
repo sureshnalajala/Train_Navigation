@@ -172,7 +172,7 @@ export default{
 }
 
 .cancelled-button {
-    background-color: #AA001E;
+    background-color: #f44336;
 }
 
 #moredetails #servicetype #coaches {

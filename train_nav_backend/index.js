@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const http = require('http');
-const httpPort= process.env.PORT ||3586;
 const {MongoClient} = require('mongodb');
 
 const getFileContentType = (filePath) => {
