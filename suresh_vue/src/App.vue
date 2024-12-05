@@ -2,7 +2,7 @@
 
   <!--Step 3 use the component-->
   <MyHeader projectTitle="Train Navigation"/> 
-  <TrainDetailsBox :trainDetails="trainDetails[0]?.trains" />
+  <TrainDetailsBox :trainDetails="trainDetails[0].trains" />
  
 </template>
 
